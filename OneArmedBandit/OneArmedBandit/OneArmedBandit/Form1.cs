@@ -13,27 +13,57 @@ namespace OneArmedBandit
 {
     public partial class Form1 : Form
     {
+        Random myRand = new Random();
+
         private Image[] wheelImages = { Resources.AppleSymbol, Resources.BananaSymbol, Resources.BARSymbol,
             Resources.CherrySymbol, Resources.GoldenAppleSymbol, Resources.GrapesSymbol,
             Resources.LemonSymbol, Resources.MelonSymbol, Resources.OrangeSymbol };
 
-        Random myRand = new Random();
+        int box1Image = 0;
+        int box2Image = 5;
+        int box3Image = 7;
+
 
         public Form1()
         {
             InitializeComponent();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = wheelImages[1];
-            pictureBox2.Image = wheelImages[5];
-            pictureBox3.Image = wheelImages[8];
+            pictureBox1.Image = wheelImages[box1Image];
+            pictureBox2.Image = wheelImages[box2Image];
+            pictureBox3.Image = wheelImages[box3Image];
         }
 
         private void spinButton_Click(object sender, EventArgs e)
         {
-              
+            int box3SpinNum = myRand.Next(4,12);
+            int box2SpinNum = box3SpinNum + 1;
+            int box1SpinNum = box2SpinNum + 1;
+
+            for (int count = 0; count < box3SpinNum; count++)
+            {
+                if (count < box1SpinNum)
+                {
+                    pictureBox1.Image = wheelImages[box1Image++];
+                    box1Image = box1Image + 1;
+                }
+
+                if (count < box2SpinNum)
+                {
+                    pictureBox2.Image = wheelImages[box2Image++];
+                    box2Image = box2Image++;
+                }
+
+                pictureBox3.Image = wheelImages[box3Image++];
+                box3Image = box3Image++;
+
+                System.Threading.Thread.Sleep(100);
+
+            }
+
         }
     }
 }
