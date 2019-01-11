@@ -107,5 +107,20 @@
   <ItemGroup>
     <None Include="Resources\OrangeSymbol.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\__________beerpager-casino-sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpinSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 second of silence.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OneSecondSilence.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OneSecondSilence.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

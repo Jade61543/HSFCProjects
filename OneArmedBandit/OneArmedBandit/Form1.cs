@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OneArmedBandit.Properties;
+using System.Media;
 
 namespace OneArmedBandit
 {
@@ -27,9 +28,12 @@ namespace OneArmedBandit
             Resources.BARSymbol, Resources.GrapesSymbol, Resources.OrangeSymbol,
             Resources.LemonSymbol, Resources.CherrySymbol, Resources.GoldenAppleSymbol};
 
+        SoundPlayer audio = new SoundPlayer(Resources.OneSecondSilence);
+
         int box1Image = 5;
         int box2Image = 3;
         int box3Image = 5;
+
 
 
         public Form1()
@@ -43,6 +47,8 @@ namespace OneArmedBandit
             pictureBox2.Image = wheelImages2[box2Image];
             pictureBox3.Image = wheelImages3[box3Image];
 
+            audio.Play();
+
         }
 
         private void spinButton_Click(object sender, EventArgs e)
@@ -51,7 +57,10 @@ namespace OneArmedBandit
             int box2SpinNum = box3SpinNum - 2;
             int box1SpinNum = box2SpinNum - 2;
 
- 
+            audio =  new SoundPlayer(Resources.SpinSound);
+            audio.Play();
+
+
             for (int count = 0; count < box3SpinNum; count++)
             {
                 if (count < box1SpinNum)
