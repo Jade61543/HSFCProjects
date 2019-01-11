@@ -40,8 +40,8 @@ namespace OneArmedBandit
         private void spinButton_Click(object sender, EventArgs e)
         {
             int box3SpinNum = myRand.Next(4, 15);
-            int box2SpinNum = box3SpinNum - 1;
-            int box1SpinNum = box2SpinNum - 1;
+            int box2SpinNum = box3SpinNum - 2;
+            int box1SpinNum = box2SpinNum - 2;
 
  
             for (int count = 0; count < box3SpinNum; count++)
@@ -49,19 +49,22 @@ namespace OneArmedBandit
                 if (count < box1SpinNum)
                 {
                     pictureBox1.Image = wheelImages[box1Image++];
+                    pictureBox1.Update();
                     box1Image = (box1Image + 1) % 9;
                 }
 
                 if (count < box2SpinNum)
                 {
                     pictureBox2.Image = wheelImages[box2Image++];
+                    pictureBox2.Update();
                     box2Image = (box2Image + 1) % 9;
                 }
 
                 pictureBox3.Image = wheelImages[box3Image++];
+                pictureBox3.Update();
                 box3Image = (box3Image + 1) % 9;
 
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(250);
             }
 
         }
