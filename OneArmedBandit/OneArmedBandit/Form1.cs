@@ -15,13 +15,21 @@ namespace OneArmedBandit
     {
         Random myRand = new Random();
 
-        private Image[] wheelImages = { Resources.AppleSymbol, Resources.BananaSymbol, Resources.BARSymbol,
+        private Image[] wheelImages1 = { Resources.AppleSymbol, Resources.BananaSymbol, Resources.BARSymbol,
             Resources.CherrySymbol, Resources.GoldenAppleSymbol, Resources.GrapesSymbol,
             Resources.LemonSymbol, Resources.MelonSymbol, Resources.OrangeSymbol };
 
-        int box1Image = 0;
-        int box2Image = 5;
-        int box3Image = 7;
+        private Image[] wheelImages2 = {Resources.GrapesSymbol, Resources.LemonSymbol, Resources.OrangeSymbol,
+            Resources.MelonSymbol, Resources.BARSymbol, Resources.GoldenAppleSymbol,
+            Resources.CherrySymbol, Resources.BananaSymbol, Resources.AppleSymbol};
+
+        private Image[] wheelImages3 = {Resources.MelonSymbol, Resources.BananaSymbol, Resources.AppleSymbol,
+            Resources.BARSymbol, Resources.GrapesSymbol, Resources.OrangeSymbol,
+            Resources.LemonSymbol, Resources.CherrySymbol, Resources.GoldenAppleSymbol};
+
+        int box1Image = 5;
+        int box2Image = 3;
+        int box3Image = 5;
 
 
         public Form1()
@@ -31,9 +39,9 @@ namespace OneArmedBandit
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = wheelImages[box1Image];
-            pictureBox2.Image = wheelImages[box2Image];
-            pictureBox3.Image = wheelImages[box3Image];
+            pictureBox1.Image = wheelImages1[box1Image];
+            pictureBox2.Image = wheelImages2[box2Image];
+            pictureBox3.Image = wheelImages3[box3Image];
 
         }
 
@@ -48,19 +56,19 @@ namespace OneArmedBandit
             {
                 if (count < box1SpinNum)
                 {
-                    pictureBox1.Image = wheelImages[box1Image++];
+                    pictureBox1.Image = wheelImages1[box1Image++];
                     pictureBox1.Update();
                     box1Image = (box1Image + 1) % 9;
                 }
 
                 if (count < box2SpinNum)
                 {
-                    pictureBox2.Image = wheelImages[box2Image++];
+                    pictureBox2.Image = wheelImages2[box2Image++];
                     pictureBox2.Update();
                     box2Image = (box2Image + 1) % 9;
                 }
 
-                pictureBox3.Image = wheelImages[box3Image++];
+                pictureBox3.Image = wheelImages3[box3Image++];
                 pictureBox3.Update();
                 box3Image = (box3Image + 1) % 9;
 
