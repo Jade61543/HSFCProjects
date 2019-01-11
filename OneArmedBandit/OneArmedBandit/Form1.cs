@@ -39,7 +39,7 @@ namespace OneArmedBandit
 
         private void spinButton_Click(object sender, EventArgs e)
         {
-            int box3SpinNum = myRand.Next(4, 15);
+            int box3SpinNum = myRand.Next(7, 19);
             int box2SpinNum = box3SpinNum - 2;
             int box1SpinNum = box2SpinNum - 2;
 
