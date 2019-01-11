@@ -56,12 +56,14 @@ namespace OneArmedBandit
             int box3SpinNum = myRand.Next(7, 19);
             int box2SpinNum = box3SpinNum - 2;
             int box1SpinNum = box2SpinNum - 2;
+            int longestSpinNum = box3SpinNum;
+            int count;
 
             audio =  new SoundPlayer(Resources.SpinSound);
             audio.Play();
 
 
-            for (int count = 0; count < box3SpinNum; count++)
+            for (count = 0; count < box3SpinNum; count++)
             {
                 if (count < box1SpinNum)
                 {
@@ -81,11 +83,16 @@ namespace OneArmedBandit
                 pictureBox3.Update();
                 box3Image = (box3Image + 1) % 9;
 
+
+
                 System.Threading.Thread.Sleep(250);
             }
 
+            if (count >= longestSpinNum)
+            {
+                audio.Stop();
+            }
         }
-
     }
 }
 
