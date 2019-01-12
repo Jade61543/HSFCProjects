@@ -92,6 +92,11 @@ namespace OneArmedBandit
             {
                 audio.Stop();
             }
+
+            if (pictureBox1.Image == pictureBox2.Image & pictureBox2.Image == pictureBox3.Image)
+            {
+
+            }
         }
     }
 }
