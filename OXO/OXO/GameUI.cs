@@ -23,6 +23,5 @@ namespace OXO
             player1 = p1Name;
             player2 = p2Name;
         }
-
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.currentPlayer = new System.Windows.Forms.Label();
+            this.currentPlayerName = new System.Windows.Forms.Label();
+            this.currentPlayerSymbol = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -37,119 +40,134 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.currentPlayer = new System.Windows.Forms.Label();
-            this.currentPlayerName = new System.Windows.Forms.Label();
-            this.currentPlayerSymbol = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(31, 26);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(123, 116);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 117);
+            this.button1.Size = new System.Drawing.Size(109, 101);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(263, 219);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 117);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(263, 26);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 117);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(505, 26);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 117);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(505, 219);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 117);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(31, 219);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(133, 117);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(31, 418);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(133, 117);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(263, 418);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(133, 117);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(505, 418);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(133, 117);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = true;
             // 
             // currentPlayer
             // 
             this.currentPlayer.AutoSize = true;
-            this.currentPlayer.Location = new System.Drawing.Point(96, 596);
+            this.currentPlayer.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentPlayer.Location = new System.Drawing.Point(157, 665);
             this.currentPlayer.Name = "currentPlayer";
-            this.currentPlayer.Size = new System.Drawing.Size(35, 13);
+            this.currentPlayer.Size = new System.Drawing.Size(114, 20);
             this.currentPlayer.TabIndex = 9;
-            this.currentPlayer.Text = "label1";
+            this.currentPlayer.Text = "Current Player :\r\n";
             // 
             // currentPlayerName
             // 
             this.currentPlayerName.AutoSize = true;
-            this.currentPlayerName.Location = new System.Drawing.Point(263, 596);
+            this.currentPlayerName.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentPlayerName.Location = new System.Drawing.Point(328, 665);
             this.currentPlayerName.Name = "currentPlayerName";
-            this.currentPlayerName.Size = new System.Drawing.Size(35, 13);
+            this.currentPlayerName.Size = new System.Drawing.Size(50, 20);
             this.currentPlayerName.TabIndex = 10;
             this.currentPlayerName.Text = "label2";
             // 
             // currentPlayerSymbol
             // 
             this.currentPlayerSymbol.AutoSize = true;
-            this.currentPlayerSymbol.Location = new System.Drawing.Point(516, 595);
+            this.currentPlayerSymbol.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentPlayerSymbol.Location = new System.Drawing.Point(487, 665);
             this.currentPlayerSymbol.Name = "currentPlayerSymbol";
-            this.currentPlayerSymbol.Size = new System.Drawing.Size(35, 13);
+            this.currentPlayerSymbol.Size = new System.Drawing.Size(50, 20);
             this.currentPlayerSymbol.TabIndex = 11;
             this.currentPlayerSymbol.Text = "label3";
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(314, 116);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 101);
+            this.button2.TabIndex = 12;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(507, 116);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 101);
+            this.button3.TabIndex = 13;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
+            this.button4.Location = new System.Drawing.Point(123, 291);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 101);
+            this.button4.TabIndex = 14;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Location = new System.Drawing.Point(314, 291);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 101);
+            this.button5.TabIndex = 15;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.Control;
+            this.button6.Location = new System.Drawing.Point(507, 291);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(109, 101);
+            this.button6.TabIndex = 16;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.SystemColors.Control;
+            this.button7.Location = new System.Drawing.Point(123, 476);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(109, 101);
+            this.button7.TabIndex = 17;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.SystemColors.Control;
+            this.button8.Location = new System.Drawing.Point(314, 476);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(109, 101);
+            this.button8.TabIndex = 18;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.SystemColors.Control;
+            this.button9.Location = new System.Drawing.Point(507, 476);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(109, 101);
+            this.button9.TabIndex = 19;
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // GameUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::OXO.Properties.Resources.OXOGrid4;
-            this.ClientSize = new System.Drawing.Size(701, 649);
-            this.Controls.Add(this.currentPlayerSymbol);
-            this.Controls.Add(this.currentPlayerName);
-            this.Controls.Add(this.currentPlayer);
+            this.BackgroundImage = global::OXO.Properties.Resources.OXOGrid12;
+            this.ClientSize = new System.Drawing.Size(724, 750);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -158,6 +176,9 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.currentPlayerSymbol);
+            this.Controls.Add(this.currentPlayerName);
+            this.Controls.Add(this.currentPlayer);
             this.Controls.Add(this.button1);
             this.Name = "GameUI";
             this.Text = "GameUI";
@@ -169,6 +190,9 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label currentPlayer;
+        private System.Windows.Forms.Label currentPlayerName;
+        private System.Windows.Forms.Label currentPlayerSymbol;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -177,8 +201,5 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label currentPlayer;
-        private System.Windows.Forms.Label currentPlayerName;
-        private System.Windows.Forms.Label currentPlayerSymbol;
     }
 }

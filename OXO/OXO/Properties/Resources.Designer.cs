@@ -63,9 +63,9 @@ namespace OXO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OXOGrid2 {
+        internal static System.Drawing.Bitmap Donut2 {
             get {
-                object obj = ResourceManager.GetObject("OXOGrid2", resourceCulture);
+                object obj = ResourceManager.GetObject("Donut2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace OXO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OXOGrid4 {
+        internal static System.Drawing.Bitmap OXOGrid12 {
             get {
-                object obj = ResourceManager.GetObject("OXOGrid4", resourceCulture);
+                object obj = ResourceManager.GetObject("OXOGrid12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap XBun2 {
+            get {
+                object obj = ResourceManager.GetObject("XBun2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

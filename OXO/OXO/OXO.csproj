@@ -101,5 +101,47 @@
   <ItemGroup>
     <None Include="Resources\OXOGrid4.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donut1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donut2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XBun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XBun1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XBun2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
