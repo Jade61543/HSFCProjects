@@ -57,6 +57,7 @@
     <Compile Include="GameUI.Designer.cs">
       <DependentUpon>GameUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="OXOGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -90,6 +91,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OXOGrid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OXOGrid4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

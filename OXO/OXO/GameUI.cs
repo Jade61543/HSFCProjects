@@ -24,9 +24,5 @@ namespace OXO
             player2 = p2Name;
         }
 
-        private void GameUI_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
