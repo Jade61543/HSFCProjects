@@ -15,24 +15,23 @@ namespace OneArmedBandit
     public partial class Form1 : Form
     {
         Random myRand = new Random();
+        
 
-        private Image[] wheelImages1 = { Resources.AppleSymbol, Resources.BananaSymbol, Resources.BARSymbol,
+        private Image[] arrayOfImages = {Resources.AppleSymbol, Resources.BananaSymbol, Resources.BARSymbol,
             Resources.CherrySymbol, Resources.GoldenAppleSymbol, Resources.GrapesSymbol,
             Resources.LemonSymbol, Resources.MelonSymbol, Resources.OrangeSymbol };
 
-        private Image[] wheelImages2 = {Resources.GrapesSymbol, Resources.LemonSymbol, Resources.OrangeSymbol,
-            Resources.MelonSymbol, Resources.BARSymbol, Resources.GoldenAppleSymbol,
-            Resources.CherrySymbol, Resources.BananaSymbol, Resources.AppleSymbol};
+        private int[] wheelImages1 = {0,1,2,3,4,5,6,8};
 
-        private Image[] wheelImages3 = {Resources.MelonSymbol, Resources.BananaSymbol, Resources.AppleSymbol,
-            Resources.BARSymbol, Resources.GrapesSymbol, Resources.OrangeSymbol,
-            Resources.LemonSymbol, Resources.CherrySymbol, Resources.GoldenAppleSymbol};
+        private int[] wheelImages2 = {5,3,7,2,8,6,0,1 };
+
+        private int[] wheelImages3 = {2,5,3,8,6,1,7,0 };
 
         SoundPlayer audio = new SoundPlayer(Resources.OneSecondSilence);
 
-        int box1Image = 5;//5
-        int box2Image = 0;//3
-        int box3Image = 4;//5
+        int box1Image = 5;
+        int box2Image = 3;
+        int box3Image = 5;
 
 
 
@@ -43,9 +42,9 @@ namespace OneArmedBandit
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = wheelImages1[box1Image];
-            pictureBox2.Image = wheelImages2[box2Image];
-            pictureBox3.Image = wheelImages3[box3Image];
+            pictureBox1.Image = arrayOfImages[wheelImages1[box1Image]];
+            pictureBox2.Image = arrayOfImages[wheelImages2[box2Image]];
+            pictureBox3.Image = arrayOfImages[wheelImages3[box3Image]];
 
             audio.Play();
         }
@@ -65,9 +64,9 @@ namespace OneArmedBandit
 
                     System.Threading.Thread.Sleep(100);
 
-                    pictureBox1.Image = wheelImages1[box1Image];
-                    pictureBox2.Image = wheelImages2[box2Image];
-                    pictureBox2.Image = wheelImages3[box3Image];
+                    pictureBox1.Image = arrayOfImages[wheelImages1[box1Image]];
+                    pictureBox2.Image = arrayOfImages[wheelImages2[box2Image]];
+                    pictureBox2.Image = arrayOfImages[wheelImages3[box3Image]];
                     pictureBox1.Update();
                     pictureBox2.Update();
                     pictureBox3.Update();
@@ -93,21 +92,21 @@ namespace OneArmedBandit
             {
                 if (count < box1SpinNum)
                 {
-                    pictureBox1.Image = wheelImages1[box1Image];//++
+                    pictureBox1.Image = arrayOfImages[wheelImages1[box1Image++]];
                     pictureBox1.Update();
-                    //box1Image = (box1Image + 1) % 9;
+                    box1Image = (box1Image + 1) % 9;
                 }
 
                 if (count < box2SpinNum)
                 {
-                    pictureBox2.Image = wheelImages2[box2Image];//++
+                    pictureBox2.Image = arrayOfImages[wheelImages2[box2Image++]];
                     pictureBox2.Update();
-                    //box2Image = (box2Image + 1) % 9;
+                    box2Image = (box2Image + 1) % 9;
                 }
 
-                pictureBox3.Image = wheelImages3[box3Image];//++
+                pictureBox3.Image = arrayOfImages[wheelImages3[box3Image++]];
                 pictureBox3.Update();
-                //box3Image = (box3Image + 1) % 9;
+                box3Image = (box3Image + 1) % 9;
 
 
 
