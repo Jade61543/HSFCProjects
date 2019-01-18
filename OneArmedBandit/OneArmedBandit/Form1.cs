@@ -21,17 +21,17 @@ namespace OneArmedBandit
             Resources.CherrySymbol, Resources.GoldenAppleSymbol, Resources.GrapesSymbol,
             Resources.LemonSymbol, Resources.MelonSymbol, Resources.OrangeSymbol };
 
-        private int[] wheelImages1 = {0,1,2,3,4,5,6,8};
+        private int[] wheelImages1 = {0,1,2,3,4,5,6,7,8};
 
-        private int[] wheelImages2 = {5,3,7,2,8,6,0,1 };
+        private int[] wheelImages2 = {5,3,7,2,8,6,0,1,4 };
 
-        private int[] wheelImages3 = {2,5,3,8,6,1,7,0 };
+        private int[] wheelImages3 = {2,5,3,8,6,1,7,0,4 };
 
         SoundPlayer audio = new SoundPlayer(Resources.OneSecondSilence);
 
-        int box1Image = 5;
-        int box2Image = 3;
-        int box3Image = 5;
+        int box1Image = 8;//5
+        int box2Image = 4;//3
+        int box3Image = 3;//5
 
 
 
@@ -55,6 +55,9 @@ namespace OneArmedBandit
                         audio = new SoundPlayer(Resources.SpinSound);
             if (wheelImages1[box1Image] == wheelImages2[box2Image] & wheelImages2[box2Image] == wheelImages3[box3Image])
             {
+
+                System.Threading.Thread.Sleep(170);
+
                 for (int count = 0; count <= 3; count++)
                 {
                     pictureBox1.Image = Resources.PoundWin;
@@ -64,17 +67,16 @@ namespace OneArmedBandit
                     pictureBox2.Update();
                     pictureBox3.Update();
 
-                    System.Threading.Thread.Sleep(100);
+                    System.Threading.Thread.Sleep(170);
 
                     pictureBox1.Image = arrayOfImages[wheelImages1[box1Image]];
                     pictureBox2.Image = arrayOfImages[wheelImages2[box2Image]];
-                    pictureBox2.Image = arrayOfImages[wheelImages3[box3Image]];
+                    pictureBox3.Image = arrayOfImages[wheelImages3[box3Image]];
                     pictureBox1.Update();
                     pictureBox2.Update();
                     pictureBox3.Update();
 
-                    System.Threading.Thread.Sleep(100);
-
+                    System.Threading.Thread.Sleep(170);
 
                 }
             }
@@ -96,19 +98,19 @@ namespace OneArmedBandit
             {
                 if (count < box1SpinNum)
                 {
-                    box1Image = (box1Image + 1) % 9;
+                    box1Image = (box1Image + 1) % 8;
                     pictureBox1.Image = arrayOfImages[wheelImages1[box1Image]];
                     pictureBox1.Update();
                 }
 
                 if (count < box2SpinNum)
                 {
-                    box2Image = (box2Image + 1) % 9;
+                   box2Image = (box2Image + 1) % 8;
                     pictureBox2.Image = arrayOfImages[wheelImages2[box2Image]];
                     pictureBox2.Update();
                 }
 
-                box3Image = (box3Image + 1) % 9;
+                box3Image = (box3Image + 1) % 8;
                 pictureBox3.Image = arrayOfImages[wheelImages3[box3Image]];
                 pictureBox3.Update();
 
