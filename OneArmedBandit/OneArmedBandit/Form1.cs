@@ -98,19 +98,19 @@ namespace OneArmedBandit
             {
                 if (count < box1SpinNum)
                 {
-                    box1Image = (box1Image + 1) % 8;
+                    //box1Image = (box1Image + 1) % 8;
                     pictureBox1.Image = arrayOfImages[wheelImages1[box1Image]];
                     pictureBox1.Update();
                 }
 
                 if (count < box2SpinNum)
                 {
-                   box2Image = (box2Image + 1) % 8;
+                    //box2Image = (box2Image + 1) % 8;
                     pictureBox2.Image = arrayOfImages[wheelImages2[box2Image]];
                     pictureBox2.Update();
                 }
 
-                box3Image = (box3Image + 1) % 8;
+                //box3Image = (box3Image + 1) % 8;
                 pictureBox3.Image = arrayOfImages[wheelImages3[box3Image]];
                 pictureBox3.Update();
 
