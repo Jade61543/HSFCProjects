@@ -177,5 +177,14 @@ namespace OneArmedBandit.Properties {
                 return ResourceManager.GetStream("SpinSound", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream WinSound {
+            get {
+                return ResourceManager.GetStream("WinSound", resourceCulture);
+            }
+        }
     }
 }
