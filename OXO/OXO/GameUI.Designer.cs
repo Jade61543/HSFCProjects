@@ -181,6 +181,7 @@
             this.Controls.Add(this.currentPlayer);
             this.Controls.Add(this.button1);
             this.Name = "GameUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameUI";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -19,7 +19,8 @@ namespace OXO
         private int currentPlayer = 0;
         private Piece currentPiece = Piece.Cross;
 
-        // Constructor that starts game 
+
+        // Constructor for game model
         public OxoGame(String player1, String player2)
         {
             players[0] = player1;
@@ -29,7 +30,7 @@ namespace OXO
         // nextPlayer moves the player to the next one, passing back the name 
         public String nextPlayer()
         {
-            currentPlayer = (currentPlayer + 1) % 2;    // get this? 
+            currentPlayer = (currentPlayer + 1) % 2;   
             return players[currentPlayer];
         }
 
@@ -49,15 +50,19 @@ namespace OXO
         // -2 if move cannot be made 
         public int makeMove(int x, int y, Piece move)
         {
-            // -THIS NEEDS IMPLEMENTING                ************* 
+            if ((x <= 3) & (y <= 3))
+            {
+                if (theBoard[x, y] == Piece.Space)
+                {
+                    return 0;
+                }
 
-            // check x and y are in range 
+                return -2;
+            }
 
-            // now record the move in theBoard 
-            return 999; // place holder so it compiles 
+            return -1;
         }
 
-        //  
         public Piece getPieceAtLocation(int x, int y)
         {
             // - THIS NEEDS IMPLEMENTING    ************** 
