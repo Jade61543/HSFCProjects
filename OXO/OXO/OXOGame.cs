@@ -14,7 +14,7 @@ namespace OXO
 
         private Piece[,] theBoard = new Piece[3, 3];
 
-        private String[] players = new String[2];
+        private string[] players = new String[2];
 
         private int currentPlayer = 0;
         private Piece currentPiece = Piece.Cross;
@@ -28,14 +28,14 @@ namespace OXO
         }
 
         // nextPlayer moves the player to the next one, passing back the name 
-        public String nextPlayer()
+        public string NextPlayer()
         {
             currentPlayer = (currentPlayer + 1) % 2;   
             return players[currentPlayer];
         }
 
         // nextPiece returns the piece that makes the next move 
-        public Piece nextPiece()
+        public Piece NextPiece()
         {
             if (currentPiece == Piece.Cross)
                 currentPiece = Piece.Nought;
@@ -48,7 +48,7 @@ namespace OXO
         // 0 returned if all OK 
         // -1 if x and y are invalid 
         // -2 if move cannot be made 
-        public int makeMove(int x, int y, Piece move)
+        public int MakeMove(int x, int y, Piece move)
         {
             if ((x <= 3) & (y <= 3))
             {
@@ -64,7 +64,7 @@ namespace OXO
             return -1;
         }
 
-        public Piece getPieceAtLocation(int x, int y)
+        public Piece GetPieceAtLocation(int x, int y)
         {
             if ((x <= 3) & (y <= 3))
             {
@@ -77,7 +77,7 @@ namespace OXO
         // detectWin detects whether a win has occurred 
         // returns 0 is Nought wins, 1 if Cross wins, 2 if draw, -1 if no win yet 
 
-        public int detectWin()
+        public int DetectWin()
         {
             int rowScore, columnScore, diag1Score, diag2Score;
             int NoughtWins = 3 * (int)Piece.Nought;   // NOUGHT 

@@ -46,21 +46,20 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(184, 178);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(123, 116);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 155);
+            this.button1.Size = new System.Drawing.Size(109, 101);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // currentPlayer
             // 
             this.currentPlayer.AutoSize = true;
             this.currentPlayer.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentPlayer.Location = new System.Drawing.Point(236, 1023);
-            this.currentPlayer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentPlayer.Location = new System.Drawing.Point(157, 665);
             this.currentPlayer.Name = "currentPlayer";
-            this.currentPlayer.Size = new System.Drawing.Size(174, 31);
+            this.currentPlayer.Size = new System.Drawing.Size(114, 20);
             this.currentPlayer.TabIndex = 9;
             this.currentPlayer.Text = "Current Player :\r\n";
             // 
@@ -68,10 +67,9 @@
             // 
             this.currentPlayerName.AutoSize = true;
             this.currentPlayerName.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentPlayerName.Location = new System.Drawing.Point(492, 1023);
-            this.currentPlayerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentPlayerName.Location = new System.Drawing.Point(328, 665);
             this.currentPlayerName.Name = "currentPlayerName";
-            this.currentPlayerName.Size = new System.Drawing.Size(77, 31);
+            this.currentPlayerName.Size = new System.Drawing.Size(50, 20);
             this.currentPlayerName.TabIndex = 10;
             this.currentPlayerName.Text = "label2";
             // 
@@ -79,10 +77,9 @@
             // 
             this.currentPlayerSymbol.AutoSize = true;
             this.currentPlayerSymbol.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentPlayerSymbol.Location = new System.Drawing.Point(730, 1023);
-            this.currentPlayerSymbol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentPlayerSymbol.Location = new System.Drawing.Point(487, 665);
             this.currentPlayerSymbol.Name = "currentPlayerSymbol";
-            this.currentPlayerSymbol.Size = new System.Drawing.Size(77, 31);
+            this.currentPlayerSymbol.Size = new System.Drawing.Size(50, 20);
             this.currentPlayerSymbol.TabIndex = 11;
             this.currentPlayerSymbol.Text = "label3";
             // 
@@ -90,96 +87,96 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(471, 178);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(314, 116);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 155);
+            this.button2.Size = new System.Drawing.Size(109, 101);
             this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(760, 178);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(507, 116);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 155);
+            this.button3.Size = new System.Drawing.Size(109, 101);
             this.button3.TabIndex = 13;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(184, 448);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(123, 291);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 155);
+            this.button4.Size = new System.Drawing.Size(109, 101);
             this.button4.TabIndex = 14;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(471, 448);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Location = new System.Drawing.Point(314, 291);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(164, 155);
+            this.button5.Size = new System.Drawing.Size(109, 101);
             this.button5.TabIndex = 15;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(760, 448);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(507, 291);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 155);
+            this.button6.Size = new System.Drawing.Size(109, 101);
             this.button6.TabIndex = 16;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(184, 732);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button7.Location = new System.Drawing.Point(123, 476);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(164, 155);
+            this.button7.Size = new System.Drawing.Size(109, 101);
             this.button7.TabIndex = 17;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(471, 732);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button8.Location = new System.Drawing.Point(314, 476);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(164, 155);
+            this.button8.Size = new System.Drawing.Size(109, 101);
             this.button8.TabIndex = 18;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Location = new System.Drawing.Point(760, 732);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button9.Location = new System.Drawing.Point(507, 476);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(164, 155);
+            this.button9.Size = new System.Drawing.Size(109, 101);
             this.button9.TabIndex = 19;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // GameUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OXO.Properties.Resources.OXOGrid12;
-            this.ClientSize = new System.Drawing.Size(1086, 1050);
+            this.ClientSize = new System.Drawing.Size(724, 716);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -192,7 +189,6 @@
             this.Controls.Add(this.currentPlayerName);
             this.Controls.Add(this.currentPlayer);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "GameUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameUI";
