@@ -10,7 +10,7 @@ namespace OXO
     {
         // Piece define possible pieces on board 
         // We use -1 as this makes win easier to calculate 
-        public enum Piece { Nought = -1, Space, Cross };
+        public enum Piece { Nought = -1, Space, Cross};
 
         private Piece[,] theBoard = new Piece[3, 3];
 
@@ -54,6 +54,7 @@ namespace OXO
             {
                 if (theBoard[x, y] == Piece.Space)
                 {
+                    theBoard[x, y] = move;
                     return 0;
                 }
 
@@ -65,12 +66,12 @@ namespace OXO
 
         public Piece getPieceAtLocation(int x, int y)
         {
-            // - THIS NEEDS IMPLEMENTING    ************** 
+            if ((x <= 3) & (y <= 3))
+            {
+                return theBoard[x, y];
+            }
 
-            // check x and y are in range 
-
-            // passes back the piece at required location 
-            return Piece.Nought;   // place holder so it compiles 
+            return Piece.Space; 
         }
 
         // detectWin detects whether a win has occurred 
