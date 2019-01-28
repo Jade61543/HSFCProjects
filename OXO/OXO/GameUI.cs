@@ -12,16 +12,22 @@ namespace OXO
 {
     public partial class GameUI : Form
     {
-        string player1;
-        string player2;
+        private string player1, player2;
+        private string currentPName;
+        private OxoGame.Piece currentPiece;
 
 
         public GameUI(string p1Name, string p2Name)
         {
-            InitializeComponent();
-
             player1 = p1Name;
             player2 = p2Name;
+
+            InitializeComponent();
+        }
+
+        private void GameUI_Load(object sender, EventArgs e)
+        {
+            theGame = new OxoGame(player1, player2);
         }
     }
 }
