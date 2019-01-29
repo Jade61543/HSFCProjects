@@ -43,31 +43,48 @@ namespace OXO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (currentPiece == OxoGame.Piece.Nought)
+            if (theGame.GetPieceAtLocation(0, 0) == OxoGame.Piece.Space)
             {
-                button1.Image = Resources.Donut2;
+                if (currentPiece == OxoGame.Piece.Nought)
+                {
+                    button1.Image = Resources.Donut2;
+                }
+                else
+                {
+                    button1.Image = Resources.XBun2;
+                }
+
+
+                theGame.MakeMove(0, 0, currentPiece);
+                int outCome = theGame.DetectWin();
+
+
+                if (outCome == 1) //cross win
+                {
+                    // create button on design and have text print saying cross win. Include sound effect.
+
+                }
+
+                if (outCome == 0) //nought win
+                {
+
+                }
+
+                if (outCome == -1) //no win
+                {
+                    currentPName = theGame.NextPlayer();
+                    currentPlayerName.Text = currentPName;
+                    currentPiece = theGame.NextPiece();
+                    currentPlayerSymbol.Text = Convert.ToString(currentPiece);
+                }
             }
-            else
-            {
-                button1.Image = Resources.XBun2;
 
-            }
-
-            theGame.MakeMove(0, 0, currentPiece);
-
-            //detect win, add winning sound effect
-
-            //if win not detected, run this code.
-            currentPName = theGame.NextPlayer();
-            currentPlayerName.Text = currentPName;
-            currentPiece = theGame.NextPiece();
-            currentPlayerSymbol.Text = Convert.ToString(currentPiece);
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
 
