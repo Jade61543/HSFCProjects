@@ -40,6 +40,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.winningP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -171,12 +172,22 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // winningP
+            // 
+            this.winningP.AutoSize = true;
+            this.winningP.Font = new System.Drawing.Font("Tahoma", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winningP.Location = new System.Drawing.Point(259, 26);
+            this.winningP.Name = "winningP";
+            this.winningP.Size = new System.Drawing.Size(0, 29);
+            this.winningP.TabIndex = 20;
+            // 
             // GameUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OXO.Properties.Resources.OXOGrid12;
             this.ClientSize = new System.Drawing.Size(724, 716);
+            this.Controls.Add(this.winningP);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -212,5 +223,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label winningP;
     }
 }
