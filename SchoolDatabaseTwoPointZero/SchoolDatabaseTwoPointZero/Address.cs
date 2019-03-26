@@ -71,7 +71,7 @@ namespace SchoolDatabaseTwoPointZero
 
         public override string ToString()
         {
-            return houseNameOrNum + ", " + street + ", " + county + ", " + postcode + ".";
+            return (houseNameOrNum + ", " + street + ", " + county + ", " + postcode + ".");
         }
     }
 }

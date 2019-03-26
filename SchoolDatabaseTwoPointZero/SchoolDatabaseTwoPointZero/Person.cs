@@ -10,7 +10,7 @@ namespace SchoolDatabaseTwoPointZero
     {
         private string name;
         private int age;
-        private Address livesAt;
+        private Address livesAt; //protected is like private, but subclasses can access them.
 
 
         public Person(string aName, int anAge, Address aLocation)
