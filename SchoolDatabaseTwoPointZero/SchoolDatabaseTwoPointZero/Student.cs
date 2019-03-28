@@ -10,7 +10,7 @@ namespace SchoolDatabaseTwoPointZero
     {
         //every student will have a student number
 
-        private string studentNum = ""; //Has to be string because an int would
+        private string studentNum; //Has to be string because an int would
                                         //lose all zeros before the first significant num (0005 = 5)
 
         public Student(string theName, int theAge, Address anAddress, string theSNum):base(theName, theAge, anAddress)
