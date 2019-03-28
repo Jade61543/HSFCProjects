@@ -13,9 +13,10 @@ namespace SchoolDatabaseTwoPointZero
         private string studentNum; //Has to be string because an int would
                                         //lose all zeros before the first significant num (0005 = 5)
 
-        public Student(string theName, int theAge, Address anAddress, string theSNum):base(theName, theAge, anAddress)
+        public Student(string theName, int theAge, Address anAddress, string theSNum):base(theName, theAge, anAddress) //:base calls the parent constructor
         {
-
+            this.SetAddress(anAddress);
+            this.studentNum = theSNum;
         }
     }
 }

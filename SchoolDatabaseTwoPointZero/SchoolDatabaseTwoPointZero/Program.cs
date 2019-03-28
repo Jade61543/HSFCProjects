@@ -10,13 +10,15 @@ namespace SchoolDatabaseTwoPointZero
     {
         static void Main(string[] args)
         {
+            /*
             string tempHouseNameNum;
             string tempStreet;
             string tempCounty;
             string tempPostcode;
 
 
-            Person p1 = new Person();
+            
+             Person p1 = new Person();
 
 
             Console.WriteLine("Please input your name. \n");
@@ -48,6 +50,19 @@ namespace SchoolDatabaseTwoPointZero
             Address a2;
             Person p2 = new Person(Console.ReadLine(), Convert.ToInt32(Console.ReadLine()), a2 = new Address(Console.ReadLine(), Console.ReadLine(), Console.ReadLine(), Console.ReadLine()));
             Console.WriteLine("\n" + p2);
+            */
+
+            Address a1 = new Address();
+            a1.SetHouseNameOrNum("dunno");
+            a1.SetStreet("Folly Ln");
+            a1.SetCounty("Herefordshire");
+            a1.SetPostCode("HR1 1LU");
+
+
+            Address a2 = new Address("14", "Church Road", "Hereforedshire", "HDN G9E");
+            Student s2 = new Student("Jade", 18, a2, "61543");
+
+            Console.WriteLine(s2);
 
             Console.ReadLine();
         }
