@@ -8,9 +8,9 @@ namespace OXO
 {
     class OxoGame
     {
-        // Piece define possible pieces on board 
+        // Piece defines possible pieces on board 
         // We use -1 as this makes win easier to calculate 
-        public enum Piece { Nought = -1, Space, Cross};
+        public enum Piece {Nought = -1, Space, Cross};
 
         private Piece[,] theBoard = new Piece[3, 3];
 
